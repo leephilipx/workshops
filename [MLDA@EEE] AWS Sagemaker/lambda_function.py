@@ -10,6 +10,7 @@ runtime= boto3.client('runtime.sagemaker')
 
 
 # This function contains the main logic of what we want to achieve upon receiving a POST event
+
 def lambda_handler(event, context):
     
     # For debugging purposes
@@ -20,9 +21,11 @@ def lambda_handler(event, context):
     payload = data['data']
     
     # Invoke the sagemaker endpoint with data
-    response = runtime.invoke_endpoint(EndpointName=ENDPOINT_NAME,
-                                       ContentType='text/csv',
-                                       Body=payload)
+    response = runtime.invoke_endpoint(
+        EndpointName=ENDPOINT_NAME,
+        ContentType='text/csv',
+        Body=payload
+    )
     
     # Parse the response from endpoint       
     result = json.loads(response['Body'].read().decode())
