@@ -6,7 +6,7 @@ Date: Thursday, 15 September 2022
 
 Ever wondered how startups can launch their AI solutions despite limited funding? Join us for our 2nd AWS workshop to learn how AWS Sagemaker functions as a fully integrated development environment to serve your data and model needs.
 
-A recording of this workshop may be found here: `<< will upload when ready >>`
+A recording of this workshop may be found here: https://www.youtube.com/watch?v=Zg4feVFsc_s
 
 <br>
 
